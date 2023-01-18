@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <h2>Hello World!!</h2>
+    <p>Hello {{ nome }}</p>
+    <p>Dados {{ dados }}</p>
+    <p>Profissao: {{ dados.profissao }}</p>
+    <p>Função: {{ dados.funcao }}</p>
+    <div>
+        <img class="img" src="{{ url_for('static', filename='imagens/computador.jpg')}}" alt="computador">
+    </div>
+
+{% endblock %}
